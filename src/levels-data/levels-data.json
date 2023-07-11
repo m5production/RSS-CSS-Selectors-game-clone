@@ -1,0 +1,79 @@
+[
+  {
+    "levelId": 0,
+    "description": "Select the plates",
+    "disposition": "<plate></plate>\n<plate></plate>",
+    "levelPassedMethod": "",
+    "searched": "plate"
+  },
+  {
+    "levelId": 1,
+    "description": "Select the bento boxes",
+    "disposition": "<plate></plate>\n<bento></bento>",
+    "levelPassedMethod": "",
+    "searched": "bento"
+  },
+  {
+    "levelId": 2,
+    "description": "Select the fancy plate",
+    "disposition": "<plate id=\"fancy\"></plate>\n<plate></plate>",
+    "levelPassedMethod": "",
+    "searched": "#fancy"
+  },
+  {
+    "levelId": 3,
+    "description": "Select the apple on the plate",
+    "disposition": "<bento></bento>\n<plate>\n\t<apple></apple>\n</plate>\n<apple></apple>",
+    "levelPassedMethod": "",
+    "searched": "plate apple"
+  },
+  {
+    "levelId": 4,
+    "description": "Select the pickle on the fancy plate",
+    "disposition": "<bento>\n\t<orange></orange>\n</bento>\n<plate id=\"fancy\">\n\t<pickle></pickle>\n</plate>\n<plate>\n\t<pickle></pickle>\n</plate>",
+    "levelPassedMethod": "",
+    "searched": "#fancy pickle"
+  },
+  {
+    "levelId": 5,
+    "description": "Select the small apples",
+    "disposition": "<apple></apple>\n<apple class=\"small\"></apple>\n<plate>\n\t<apple class=\"small\"></apple>\n</plate>",
+    "levelPassedMethod": "",
+    "searched": "apple.small"
+  },
+  {
+    "levelId": 6,
+    "description": "Select the small oranges",
+    "disposition": "<apple></apple>\n<apple class=\"small\"></apple>\n<bento>\n\t<orange class=\"small\"></orange>\n</bento>\n<plate>\n\t<orange></orange>\n</plate>\n<plate>\n\t<orange class=\"small\"></orange>\n</plate>",
+    "levelPassedMethod": "",
+    "searched": "orange.small"
+  },
+  {
+    "levelId": 7,
+    "description": "Select the small oranges in the bentos",
+    "disposition": "<apple></apple>\n<apple class=\"small\"></apple>\n<bento>\n\t<orange class=\"small\"></orange>\n</bento>\n<plate>\n\t<orange></orange>\n</plate>\n<plate>\n\t<orange class=\"small\"></orange>\n</plate>",
+    "levelPassedMethod": "",
+    "searched": "bento orange.small"
+  },
+  {
+    "levelId": 8,
+    "description": "Select all the plates and bentos",
+    "disposition": "<pickle class=\"small\"></pickle>\n<pickle></pickle>\n<plate>\n\t<pickle></pickle>\n</plate>\n<bento>\n\t<pickle></pickle>\n</bento>\n<plate>\n\t<pickle></pickle>\n</plate>\n<pickle></pickle>\n<pickle class=\"small\"></pickle>",
+    "levelPassedMethod": "",
+    "searched": "plate, bento"
+  },
+  {
+    "levelId": 9,
+    "description": "Select all the things!",
+    "disposition": "<apple></apple>\n<plate>\n\t<orange class=\"small\"></orange>\n</plate>\n<bento></bento>\n<bento>\n\t<orange></orange>\n</bento>\n<plate id=\"fancy\"></plate>",
+    "levelPassedMethod": "",
+    "searched": "*"
+  },
+  {
+    "levelId": 10,
+    "description": "Select everything on a plate",
+    "disposition": "<plate id=\"fancy\">\n\t<orange class=\"small\"></orange>\n</plate>\n<plate>\n\t<pickle></pickle>\n</plate>\n<apple class=\"small\"></apple>\n<plate>\n\t<apple></apple>\n</plate>",
+    "levelPassedMethod": "",
+    "searched": "plate *"
+  }
+]

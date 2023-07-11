@@ -1,0 +1,75 @@
+@import '../../../../globalController/style/variables.scss';
+@import './variables.scss';
+@import './code-block-heading.scss';
+@import './user-input-elements.scss';
+
+.editor-viewer-wrapper {
+  margin: 1rem;
+  display: flex;
+
+  max-height: 21.5rem;
+
+  border: 2px solid black;
+  border-radius: $border-radius-m;
+}
+
+@media (max-width: 750px) {
+  .editor-viewer-wrapper {
+    flex-direction: column;
+    max-height: unset;
+    gap: 0.5rem;
+  }
+}
+
+.code-editor {
+  width: 50%;
+
+  background-color: #fff;
+  border-radius: $border-radius-m;
+}
+
+@media (max-width: 750px) {
+  .code-editor {
+    width: unset;
+  }
+}
+
+.code-viewer {
+  order: -1;
+
+  flex-grow: 1;
+  
+  background-color: $secondary-bg-color;
+
+  pre {
+    text-wrap: wrap;
+    margin: 0;
+  }
+}
+
+.html-code {
+  tab-size: 1rem;
+}
+
+.line-numbers {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.4rem;
+  text-align: right;
+  border-right: 1px solid $primary-bg-color;
+
+  &.light {
+    background-color: $secondary-bg-color;
+  }
+}
+
+.code-block.highlight {
+  cursor: default;
+
+  & .hljs-tag,
+  & .hljs-name,
+  & .hljs-attr,
+  & .hljs-string {
+    color: white;
+  }
+}

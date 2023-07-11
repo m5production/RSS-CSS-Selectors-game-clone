@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.main-body {
+  scroll-behavior: smooth;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: $primary-color;
+  background-color: $primary-bg-color;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-areas: 'block1    block1    block4'
+                       'block2-3  block2-3  block4'
+                       'block2-3  block2-3  block4'
+                       'footer    footer    filler';
+  grid-template-columns: 1fr 1fr 0.5fr;
+
+  min-height: 100vh;
+}
+
+.level-description {
+  grid-area: block1;
+}
+
+.editor-viewer-wrapper {
+  grid-area: block2-3;
+}
+
+.levels-panel {
+  grid-area: block4;
+}
+
+.main-footer {
+  grid-area: footer;
+}

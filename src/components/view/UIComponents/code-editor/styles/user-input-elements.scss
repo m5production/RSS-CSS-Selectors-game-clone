@@ -1,0 +1,36 @@
+.user-input-wrapper {
+  padding: 0.2rem;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 0.2rem;
+
+  &>* {
+    height: 1.5rem;
+  }
+}
+
+.user-input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: flex-start;
+
+  font-size: 1rem;
+
+  border: none;
+  background-color: $accent-color;
+
+  &:focus {
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.explanation-text {
+  padding: 0 0.5rem;
+  text-align: justify;
+}
+
+.show-answer-btn {
+  margin: 1rem 0.5rem 0;
+}

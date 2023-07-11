@@ -1,0 +1,17 @@
+@import '../../../../globalController/style/variables.scss';
+
+.code-section {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+}
+
+.code-block-header {
+  grid-column: 1/-1;
+  grid-row: 1;
+  display: flex;
+
+  background-color: $secondary-bg-color;
+  border-bottom: 2px solid $primary-color;
+  padding: 0.2rem;
+  align-items: center;
+}

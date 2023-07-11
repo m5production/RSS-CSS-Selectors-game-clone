@@ -1,0 +1,74 @@
+// food items styles were taken from https://github.com/flukeout/css-diner
+
+@import '../../../../globalController/style/variables.scss';
+@import './variables.scss';
+@import '../shared-styles/index.scss';
+
+bento, plate {
+  position: relative;
+  
+  width: $dish-size;
+  height: $dish-size;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0.5rem 0 rgba(0,0,0,.1);
+}
+
+plate {
+  border-bottom: solid 0.4rem $plate-color;
+  background: white;
+  border-radius: 50%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 17%;
+    top: 17%;
+    
+    height: 65%;
+    width: 65%;
+
+    border-radius: 60%;
+    border-top: solid 0.4rem #CCC;
+    opacity: 0.4;
+    background: white;
+  }
+  
+  &#fancy:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 4%;
+
+    height: 76%;
+    width: 76%;
+    
+    border-radius: 60%;
+    border: solid 0.5rem $accent-color;
+    opacity: 0.4;
+  }
+}
+
+bento {
+  position: relative;
+
+  background: $bento-color;
+  border: solid 0.35rem $bento-border-color;
+  border-width: 1.3rem 0.15rem;
+}
+
+
+
+bento plate,
+plate bento {
+  height: calc($dish-size * 0.75);
+  width: calc($dish-size * 0.75);
+
+  position: absolute;
+  top: -0.5rem;
+  left: 0.6rem;
+}

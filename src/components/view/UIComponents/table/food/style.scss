@@ -1,0 +1,59 @@
+// dishes items styles were taken from https://github.com/flukeout/css-diner
+
+@import './variables.scss';
+@import '../shared-styles/index.scss';
+
+apple,
+orange,
+pickle {
+  position: relative;
+
+  height: $food-size;
+
+  box-shadow: 0 0.35rem 0 rgba(0, 0, 0, .2);
+
+  z-index: 1;
+
+  &.small {
+    height: calc($food-size * 0.75);
+    width: calc($food-size * 0.75);
+  }
+}
+
+
+apple {
+  background: $apple-color;
+  border-color: $apple-border-color;
+}
+
+orange {
+  background: $orange-color;
+  border-color: $orange-border-color;
+}
+
+orange,
+apple {
+  width: $food-size;
+
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem 0.25rem 1rem;
+}
+
+pickle {
+  position: relative;
+
+  display: block;
+
+  width: calc($food-size * 0.5);
+
+  background: $pickle-color;
+  border-style: solid;
+  border-color: $pickle-border-color;
+  border-radius: calc($food-size / 2);
+  border-width: 0.1rem 0.1rem 0.55rem;
+
+  &.small {
+    width: calc($food-size * 0.4);
+  }
+}

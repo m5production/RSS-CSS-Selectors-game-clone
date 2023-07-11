@@ -1,0 +1,36 @@
+{
+  "name": "rss-css-selectors",
+  "version": "1.0.0",
+  "description": "rss-css-selectors",
+  "main": "index.ts",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@webpack-cli/generators": "^3.0.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.43.0",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "highlight.js": "^11.8.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "sass": "^1.63.2",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.1.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
